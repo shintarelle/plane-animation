@@ -138,7 +138,7 @@ canvas {
 }
 .content .ground-container .clouds {
   z-index: 2;
-  background-image: url("./img/clouds.png");
+  background-image: url("https://assets.codepen.io/557388/clouds.png");
 }
 .content .scroll-cta, .content .credits {
   position: absolute;
