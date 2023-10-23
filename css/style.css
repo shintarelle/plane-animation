@@ -134,7 +134,7 @@ canvas {
 }
 .content .ground-container .ground {
   z-index: -1;
-  background-image: url("./img/background-reduced.jpg");
+  background-image: url("https://assets.codepen.io/557388/background-reduced.jpg");
 }
 .content .ground-container .clouds {
   z-index: 2;
@@ -149,7 +149,7 @@ canvas {
   opacity: 0;
 }
 .content .sunset {
-  background: url("./img/sunset-reduced.jpg") no-repeat top center;
+  background: url("https://assets.codepen.io/557388/sunset-reduced.jpg") no-repeat top center;
   background-size: cover;
   transform-origin: top center;
 }
