@@ -55,10 +55,10 @@ class Scene
     this.onResize();window.addEventListener('resize', this.onResize, false);var edges = new THREE.EdgesGeometry(model.children[0].geometry);let line = new THREE.LineSegments(edges);line.material.depthTest = false;line.material.opacity = 0.5;line.material.transparent = true;line.position.x = 0.5;line.position.z = -1;line.position.y = 0.2;this.modelGroup = new THREE.Group();model.layers.set(0);line.layers.set(1);this.modelGroup.add(model);this.modelGroup.add(line);this.scene.add(this.modelGroup);}}function loadModel()
 {
   gsap.registerPlugin(ScrollTrigger);
-  gsap.registerPlugin(DrawSVGPlugin);
-  gsap.set('#line-length', { drawSVG: 0 });
-  gsap.set('#line-wingspan', { drawSVG: 0 });
-  gsap.set('#circle-phalange', { drawSVG: 0 });
+  // gsap.registerPlugin(DrawSVGPlugin);
+  // gsap.set('#line-length', { drawSVG: 0 });
+  // gsap.set('#line-wingspan', { drawSVG: 0 });
+  // gsap.set('#circle-phalange', { drawSVG: 0 });
 
   var object;
 
@@ -142,66 +142,66 @@ function setupAnimation(model)
 
 
 
-  gsap.to('#line-length', {
-    drawSVG: 100,
-    scrollTrigger: {
-      trigger: ".length",
-      scrub: true,
-      start: "top bottom",
-      end: "top top" } });
+  // gsap.to('#line-length', {
+  //   drawSVG: 100,
+  //   scrollTrigger: {
+  //     trigger: ".length",
+  //     scrub: true,
+  //     start: "top bottom",
+  //     end: "top top" } });
 
 
 
-  gsap.to('#line-wingspan', {
-    drawSVG: 100,
-    scrollTrigger: {
-      trigger: ".wingspan",
-      scrub: true,
-      start: "top 25%",
-      end: "bottom 50%" } });
+  // gsap.to('#line-wingspan', {
+  //   drawSVG: 100,
+  //   scrollTrigger: {
+  //     trigger: ".wingspan",
+  //     scrub: true,
+  //     start: "top 25%",
+  //     end: "bottom 50%" } });
 
 
 
-  gsap.to('#circle-phalange', {
-    drawSVG: 100,
-    scrollTrigger: {
-      trigger: ".phalange",
-      scrub: true,
-      start: "top 50%",
-      end: "bottom 100%" } });
+  // gsap.to('#circle-phalange', {
+  //   drawSVG: 100,
+  //   scrollTrigger: {
+  //     trigger: ".phalange",
+  //     scrub: true,
+  //     start: "top 50%",
+  //     end: "bottom 100%" } });
 
 
 
-  gsap.to('#line-length', {
-    opacity: 0,
-    drawSVG: 0,
-    scrollTrigger: {
-      trigger: ".length",
-      scrub: true,
-      start: "top top",
-      end: "bottom top" } });
+  // gsap.to('#line-length', {
+  //   opacity: 0,
+  //   drawSVG: 0,
+  //   scrollTrigger: {
+  //     trigger: ".length",
+  //     scrub: true,
+  //     start: "top top",
+  //     end: "bottom top" } });
 
 
 
-  gsap.to('#line-wingspan', {
-    opacity: 0,
-    drawSVG: 0,
-    scrollTrigger: {
-      trigger: ".wingspan",
-      scrub: true,
-      start: "top top",
-      end: "bottom top" } });
+  // gsap.to('#line-wingspan', {
+  //   opacity: 0,
+  //   drawSVG: 0,
+  //   scrollTrigger: {
+  //     trigger: ".wingspan",
+  //     scrub: true,
+  //     start: "top top",
+  //     end: "bottom top" } });
 
 
 
-  gsap.to('#circle-phalange', {
-    opacity: 0,
-    drawSVG: 0,
-    scrollTrigger: {
-      trigger: ".phalange",
-      scrub: true,
-      start: "top top",
-      end: "bottom top" } });
+  // gsap.to('#circle-phalange', {
+  //   opacity: 0,
+  //   drawSVG: 0,
+  //   scrollTrigger: {
+  //     trigger: ".phalange",
+  //     scrub: true,
+  //     start: "top top",
+  //     end: "bottom top" } });
 
 
 
